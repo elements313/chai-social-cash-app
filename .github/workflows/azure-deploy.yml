@@ -94,14 +94,21 @@ jobs:
           </system.webServer>
         </configuration>
         EOF
+        
+        # Create deployment zip
+        cd deployment && zip -r ../deployment.zip . && cd ..
+
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
 
     - name: Deploy to Azure App Service
-      uses: azure/webapps-deploy@v2
+      uses: azure/CLI@v1
       with:
-        app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        slot-name: 'Production'
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
-        package: ./deployment
+        azcliversion: 2.30.0
+        inlineScript: |
+          az webapp deploy --resource-group chai-social-rg-ca --name chai-social-cash-app --src-path ./deployment.zip --type zip
 
     - name: Test deployment
       run: |
