@@ -101,7 +101,7 @@ jobs:
     - name: Azure Login
       uses: azure/login@v1
       with:
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Deploy to Azure App Service
       uses: azure/CLI@v1
