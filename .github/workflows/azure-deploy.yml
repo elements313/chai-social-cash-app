@@ -1,0 +1,109 @@
+name: Deploy to Azure App Service
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  AZURE_WEBAPP_NAME: chai-social-cash-app
+  AZURE_WEBAPP_PACKAGE_PATH: '.'
+  NODE_VERSION: '18.x'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build React app
+      run: npm run build
+
+    - name: Create deployment package
+      run: |
+        # Create a deployment directory
+        mkdir -p deployment
+        
+        # Copy built React app
+        cp -r build/* deployment/
+        
+        # Copy server files
+        cp server/server.js deployment/
+        
+        # Copy production package.json
+        cp .github/workflows/package-template.json deployment/package.json
+        
+        # Create web.config for Azure
+        cat > deployment/web.config << EOF
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <system.webServer>
+            <handlers>
+              <add name="iisnode" path="server.js" verb="*" modules="iisnode"/>
+            </handlers>
+            <rewrite>
+              <rules>
+                <!-- Handle API routes -->
+                <rule name="API Routes" stopProcessing="true">
+                  <match url="^api/(.*)$" />
+                  <action type="Rewrite" url="server.js" />
+                </rule>
+                <!-- Handle React Router -->
+                <rule name="React Routes" stopProcessing="true">
+                  <match url=".*" />
+                  <conditions logicalGrouping="MatchAll">
+                    <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+                    <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+                  </conditions>
+                  <action type="Rewrite" url="/index.html" />
+                </rule>
+              </rules>
+            </rewrite>
+            <iisnode 
+              node_env="production"
+              nodeProcessCountPerApplication="1"
+              maxConcurrentRequestsPerProcess="1024"
+              maxNamedPipeConnectionRetry="3"
+              namedPipeConnectionRetryDelay="2000"
+              maxNamedPipeConnectionPoolSize="512"
+              maxNamedPipePooledConnectionAge="30000"
+              asyncCompletionThreadCount="0"
+              initialRequestBufferSize="4096"
+              maxRequestBufferSize="65536"
+              uncFileChangesPollingInterval="5000"
+              gracefulShutdownTimeout="60000"
+              loggingEnabled="true"
+              logDirectoryNameSuffix="logs"
+              debuggingEnabled="false"
+              devErrorsEnabled="false"
+              flushResponse="false"
+              watchedFiles="web.config;*.js"
+              enableXFF="true" />
+          </system.webServer>
+        </configuration>
+        EOF
+
+    - name: Deploy to Azure App Service
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        slot-name: 'Production'
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
+        package: ./deployment
+
+    - name: Test deployment
+      run: |
+        echo "Deployment completed successfully!"
+        echo "Your app should be available at: https://${{ env.AZURE_WEBAPP_NAME }}.azurewebsites.net"

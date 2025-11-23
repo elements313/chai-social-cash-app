@@ -12,7 +12,11 @@ const PORT = process.env.PORT || 8000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../build')));
+// Serve static files (in Azure, the build files will be in the same directory as server.js)
+const staticPath = process.env.NODE_ENV === 'production' 
+  ? path.join(__dirname) 
+  : path.join(__dirname, '../build');
+app.use(express.static(staticPath));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Create uploads directory if it doesn't exist
@@ -334,11 +338,14 @@ app.get('/api/health', (req, res) => {
 });
 
 // Serve React app for any non-API routes (remove this in development)
-if (process.env.NODE_ENV === 'production') {
-  app.get('*', (req, res) => {
+// Serve React app for all non-API routes
+app.get('*', (req, res) => {
+  if (process.env.NODE_ENV === 'production') {
+    res.sendFile(path.join(__dirname, 'index.html'));
+  } else {
     res.sendFile(path.join(__dirname, '../build/index.html'));
-  });
-}
+  }
+});
 
 // Error handling middleware
 app.use((error, req, res, next) => {

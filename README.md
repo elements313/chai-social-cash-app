@@ -149,6 +149,31 @@ The app maintains accurate cash balances by:
 4. Calculating per-user balances
 5. Providing audit trails
 
+## 🚀 Deployment
+
+### Azure Cloud Deployment
+This app is configured for automated deployment to Azure using GitHub Actions.
+
+**Quick Deploy to Azure:**
+1. Create Azure App Service (Node 18 LTS)
+2. Download publish profile from Azure Portal
+3. Add publish profile to GitHub Secrets as `AZUREAPPSERVICE_PUBLISHPROFILE`
+4. Push to main branch - deployment happens automatically!
+
+**📋 [Full Azure Deployment Guide](AZURE_DEPLOYMENT.md)**
+
+### Local Development
+```bash
+# Frontend (port 3000)
+npm start
+
+# Backend (port 8000) 
+npm run server
+
+# Both together
+npm run dev
+```
+
 ## 🚀 Future Enhancements
 
 ### Phase 2: Clover POS Integration
@@ -162,6 +187,8 @@ The app maintains accurate cash balances by:
 - Email notifications
 - Advanced analytics
 - User roles and permissions
+- Azure Database integration
+- Advanced monitoring & logging
 
 ## 🤝 Contributing
 
