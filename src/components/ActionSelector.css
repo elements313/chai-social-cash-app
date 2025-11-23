@@ -1,0 +1,108 @@
+.action-selector {
+  padding: 2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.action-selector h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.action-selector p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.daily-closing-btn:hover {
+  border-color: #007bff;
+  background: #f8f9fa;
+}
+
+.cash-withdrawal-btn:hover {
+  border-color: #28a745;
+  background: #f8f9fa;
+}
+
+.cash-spending-btn:hover {
+  border-color: #17a2b8;
+  background: #f8f9fa;
+}
+
+.btn-icon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.btn-content {
+  flex: 1;
+}
+
+.btn-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.btn-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .action-selector {
+    padding: 1rem;
+  }
+  
+  .action-selector h2 {
+    font-size: 1.5rem;
+  }
+  
+  .action-btn {
+    padding: 1rem;
+  }
+  
+  .btn-icon {
+    font-size: 2rem;
+    margin-right: 0.75rem;
+  }
+  
+  .btn-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .btn-content p {
+    font-size: 0.8rem;
+  }
+}
