@@ -1,0 +1,33 @@
+2025-11-23T10:25:13.0650864Z Container start method called.
+2025-11-23T10:25:13.0703782Z Establishing network.
+2025-11-23T10:25:13.0708740Z Pulling image: appsvc/node:20-lts_20251016.4.tuxprod.
+2025-11-23T10:25:13.2760096Z Container is starting.
+2025-11-23T10:25:13.2794882Z Establishing user namespace if not established already.
+2025-11-23T10:25:13.2798412Z Establishing network if not established already.
+2025-11-23T10:25:13.2800906Z Mounting volumes.
+2025-11-23T10:25:13.2837009Z Nested mountpoint 
+2025-11-23T10:25:13.2979458Z Nested mountpoint volatile/logs
+2025-11-23T10:25:13.3134372Z Nested mountpoint 
+2025-11-23T10:25:13.3272640Z Nested mountpoint 
+2025-11-23T10:25:13.3301158Z Nested mountpoint 
+2025-11-23T10:25:13.4802120Z Creating container.
+2025-11-23T10:25:13.4807763Z Creating pipes for streaming container io.
+2025-11-23T10:25:13.4829864Z Creating stdout named pipe at /podr/container/pipe/2e93fabb4b9c_chai-social-cash-app/stdout_7f6b3a04449d42aebef50214bbf4a584.
+2025-11-23T10:25:13.4887754Z Successfully created stdout named pipe at: /podr/container/pipe/2e93fabb4b9c_chai-social-cash-app/stdout_7f6b3a04449d42aebef50214bbf4a584.
+2025-11-23T10:25:13.4901992Z Opening named pipe /podr/container/pipe/2e93fabb4b9c_chai-social-cash-app/stdout_7f6b3a04449d42aebef50214bbf4a584 for reading in non-blocking mode.
+2025-11-23T10:25:13.4904886Z Successfully opened named pipe: /podr/container/pipe/2e93fabb4b9c_chai-social-cash-app/stdout_7f6b3a04449d42aebef50214bbf4a584.
+2025-11-23T10:25:13.4966837Z Successfully removed non-blocking flag from /podr/container/pipe/2e93fabb4b9c_chai-social-cash-app/stdout_7f6b3a04449d42aebef50214bbf4a584.
+2025-11-23T10:25:13.4975213Z Creating stderr named pipe at /podr/container/pipe/2e93fabb4b9c_chai-social-cash-app/stderr_34e090cc5834440293d995cd1de67863.
+2025-11-23T10:25:13.4979240Z Successfully created stderr named pipe at: /podr/container/pipe/2e93fabb4b9c_chai-social-cash-app/stderr_34e090cc5834440293d995cd1de67863.
+2025-11-23T10:25:13.5046948Z Opening named pipe /podr/container/pipe/2e93fabb4b9c_chai-social-cash-app/stderr_34e090cc5834440293d995cd1de67863 for reading in non-blocking mode.
+2025-11-23T10:25:13.5053540Z Successfully opened named pipe: /podr/container/pipe/2e93fabb4b9c_chai-social-cash-app/stderr_34e090cc5834440293d995cd1de67863.
+2025-11-23T10:25:13.5056082Z Successfully removed non-blocking flag from /podr/container/pipe/2e93fabb4b9c_chai-social-cash-app/stderr_34e090cc5834440293d995cd1de67863.
+2025-11-23T10:25:13.5172167Z Creating container with image: appsvc/node:20-lts_20251016.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/node:20-lts_20251016.4.tuxprod
+2025-11-23T10:25:14.3378396Z Starting container: 2e93fabb4b9c_chai-social-cash-app.
+2025-11-23T10:25:14.4393643Z Starting watchers and probes.
+2025-11-23T10:25:14.4584779Z Starting metrics collection.
+2025-11-23T10:25:14.4630168Z Container is running.
+2025-11-23T10:25:14.6232124Z Container start method finished after 1556 ms.
+2025-11-23T10:25:26.7878744Z Site startup probe succeeded after 12.086709 seconds.
+2025-11-23T10:25:26.9632487Z Site started.
+2025-11-23T10:25:27.0502288Z Site is running with patch version NODE 20.19.5

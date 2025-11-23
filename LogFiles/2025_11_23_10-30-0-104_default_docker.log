@@ -1,0 +1,432 @@
+2025-11-23T18:16:44.706562535Z    _____                               
+2025-11-23T18:16:44.715342594Z   /  _  \ __________ _________   ____  
+2025-11-23T18:16:44.715351180Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-11-23T18:16:44.715356069Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-11-23T18:16:44.715360558Z \____|__  /_____ \____/ |__|    \___  >
+2025-11-23T18:16:44.715364826Z         \/      \/                  \/ 
+2025-11-23T18:16:44.715369304Z A P P   S E R V I C E   O N   L I N U X
+2025-11-23T18:16:44.715373451Z 
+2025-11-23T18:16:44.719480763Z Documentation    : http://aka.ms/webapp-linux
+2025-11-23T18:16:44.719530214Z NodeJS quickstart: https://aka.ms/node-qs
+2025-11-23T18:16:44.719535925Z NodeJS Version   : v20.19.5
+2025-11-23T18:16:44.719540123Z Instance Name    : 10-30-0-104
+2025-11-23T18:16:44.719544160Z Instance Id      : 870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724
+2025-11-23T18:16:44.719548509Z 
+2025-11-23T18:16:44.719553077Z Note: Any data outside '/home' is not persisted
+2025-11-23T18:16:47.423149685Z Starting OpenBSD Secure Shell server: sshd.
+2025-11-23T18:16:47.456574624Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-11-23T18:16:47.516512183Z Updating certificates in /etc/ssl/certs...
+2025-11-23T18:18:21.152652579Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2025-11-23T18:18:21.152986423Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2025-11-23T18:18:21.687572497Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-11-23T18:18:22.284536421Z 4 added, 0 removed; done.
+2025-11-23T18:18:22.284573530Z Running hooks in /etc/ca-certificates/update.d...
+2025-11-23T18:18:22.314127887Z done.
+2025-11-23T18:18:22.375358317Z CA certificates copied and updated successfully.
+2025-11-23T18:18:22.793733694Z Starting periodic command scheduler: cron.
+2025-11-23T18:18:23.112870693Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-11-23T18:18:23.112905628Z Could not find operation ID in manifest. Generating an operation id...
+2025-11-23T18:18:23.129403469Z Build Operation ID: 46c53216-ebbd-413a-b3aa-8eb0689d2192
+2025-11-23T18:18:24.267041911Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-11-23T18:18:24.367554141Z Writing output script to '/opt/startup/startup.sh'
+2025-11-23T18:18:24.601592799Z Running #!/bin/sh
+2025-11-23T18:18:24.601628566Z 
+2025-11-23T18:18:24.601637733Z # Enter the source directory to make sure the script runs where the user expects
+2025-11-23T18:18:24.601644495Z cd "/home/site/wwwroot"
+2025-11-23T18:18:24.601650537Z 
+2025-11-23T18:18:24.601677336Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-11-23T18:18:24.601682295Z if [ -z "$PORT" ]; then
+2025-11-23T18:18:24.601686573Z 		export PORT=8080
+2025-11-23T18:18:24.601691703Z fi
+2025-11-23T18:18:24.601696572Z 
+2025-11-23T18:18:24.601701140Z npm start
+2025-11-23T18:18:36.567705549Z npm info using npm@10.9.2
+2025-11-23T18:18:36.583996962Z npm info using node@v20.19.5
+2025-11-23T18:19:17.286436993Z 
+2025-11-23T18:19:17.291362289Z > chai-social-cash-app@1.0.0 start
+2025-11-23T18:19:17.291491968Z > node server.js
+2025-11-23T18:19:17.291500284Z 
+2025-11-23T18:19:17.929156605Z node:internal/modules/cjs/loader:1210
+2025-11-23T18:19:17.929182795Z   throw err;
+2025-11-23T18:19:17.929189538Z   ^
+2025-11-23T18:19:17.929195439Z 
+2025-11-23T18:19:17.929201511Z Error: Cannot find module 'express'
+2025-11-23T18:19:17.929207733Z Require stack:
+2025-11-23T18:19:17.929213664Z - /home/site/wwwroot/server.js
+2025-11-23T18:19:17.929219626Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+2025-11-23T18:19:17.929225647Z     at Module._load (node:internal/modules/cjs/loader:1038:27)
+2025-11-23T18:19:17.929231459Z     at Module.require (node:internal/modules/cjs/loader:1289:19)
+2025-11-23T18:19:17.929237430Z     at require (node:internal/modules/helpers:182:18)
+2025-11-23T18:19:17.929243301Z     at Object.<anonymous> (/home/site/wwwroot/server.js:1:17)
+2025-11-23T18:19:17.929249864Z     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+2025-11-23T18:19:17.929256116Z     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+2025-11-23T18:19:17.929261827Z     at Module.load (node:internal/modules/cjs/loader:1266:32)
+2025-11-23T18:19:17.929267678Z     at Module._load (node:internal/modules/cjs/loader:1091:12)
+2025-11-23T18:19:17.929273890Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-11-23T18:19:17.929336391Z   code: 'MODULE_NOT_FOUND',
+2025-11-23T18:19:17.929344716Z   requireStack: [ '/home/site/wwwroot/server.js' ]
+2025-11-23T18:19:17.929350808Z }
+2025-11-23T18:19:17.929356369Z 
+2025-11-23T18:19:17.929361739Z Node.js v20.19.5
+2025-11-23T18:19:18.147621559Z npm http fetch GET 200 https://registry.npmjs.org/npm 1318ms
+2025-11-23T18:19:18.267399453Z npm notice
+2025-11-23T18:19:18.267843718Z npm notice New major version of npm available! 10.9.2 -> 11.6.3
+2025-11-23T18:19:18.268031028Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.3
+2025-11-23T18:19:18.268041718Z npm notice To update run: npm install -g npm@11.6.3
+2025-11-23T18:19:18.268060655Z npm notice
+
+2025-11-23T18:19:35.956966581Z    _____                               
+2025-11-23T18:19:36.191313224Z   /  _  \ __________ _________   ____  
+2025-11-23T18:19:36.191347729Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-11-23T18:19:36.191352037Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-11-23T18:19:36.191355143Z \____|__  /_____ \____/ |__|    \___  >
+2025-11-23T18:19:36.191358489Z         \/      \/                  \/ 
+2025-11-23T18:19:36.191361355Z A P P   S E R V I C E   O N   L I N U X
+2025-11-23T18:19:36.191364030Z 
+2025-11-23T18:19:36.191366595Z Documentation    : http://aka.ms/webapp-linux
+2025-11-23T18:19:36.191369179Z NodeJS quickstart: https://aka.ms/node-qs
+2025-11-23T18:19:36.191371844Z NodeJS Version   : v20.19.5
+2025-11-23T18:19:36.191374479Z Instance Name    : 10-30-0-104
+2025-11-23T18:19:36.191377084Z Instance Id      : 870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724
+2025-11-23T18:19:36.191379779Z 
+2025-11-23T18:19:36.191382344Z Note: Any data outside '/home' is not persisted
+2025-11-23T18:19:48.475489337Z Starting OpenBSD Secure Shell server: sshd.
+2025-11-23T18:19:48.501872433Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-11-23T18:19:48.635974871Z Updating certificates in /etc/ssl/certs...
+2025-11-23T18:20:24.379139109Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2025-11-23T18:20:24.379169806Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2025-11-23T18:20:24.503131211Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-11-23T18:20:24.651634835Z 4 added, 0 removed; done.
+2025-11-23T18:20:24.651664982Z Running hooks in /etc/ca-certificates/update.d...
+2025-11-23T18:20:24.658548437Z done.
+2025-11-23T18:20:24.745178189Z CA certificates copied and updated successfully.
+2025-11-23T18:20:25.029020359Z Starting periodic command scheduler: cron.
+2025-11-23T18:20:25.387831056Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-11-23T18:20:25.387856655Z Could not find operation ID in manifest. Generating an operation id...
+2025-11-23T18:20:25.387862946Z Build Operation ID: b1c3d156-b838-4c66-a354-006673040a06
+2025-11-23T18:20:25.783585865Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-11-23T18:20:25.812862589Z Writing output script to '/opt/startup/startup.sh'
+2025-11-23T18:20:25.860183514Z Running #!/bin/sh
+2025-11-23T18:20:25.860206517Z 
+2025-11-23T18:20:25.863157609Z # Enter the source directory to make sure the script runs where the user expects
+2025-11-23T18:20:25.863168590Z cd "/home/site/wwwroot"
+2025-11-23T18:20:25.863175593Z 
+2025-11-23T18:20:25.863193576Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-11-23T18:20:25.863196802Z if [ -z "$PORT" ]; then
+2025-11-23T18:20:25.863199698Z 		export PORT=8080
+2025-11-23T18:20:25.863202613Z fi
+2025-11-23T18:20:25.863205539Z 
+2025-11-23T18:20:25.863208174Z npm start
+2025-11-23T18:20:27.903131022Z npm info using npm@10.9.2
+2025-11-23T18:20:27.903155889Z npm info using node@v20.19.5
+2025-11-23T18:20:33.746899761Z 
+2025-11-23T18:20:33.746929336Z > chai-social-cash-app@1.0.0 start
+2025-11-23T18:20:33.746936800Z > node server.js
+2025-11-23T18:20:33.746942801Z 
+2025-11-23T18:20:33.831288395Z node:internal/modules/cjs/loader:1210
+2025-11-23T18:20:33.831310687Z   throw err;
+2025-11-23T18:20:33.831317180Z   ^
+2025-11-23T18:20:33.831323561Z 
+2025-11-23T18:20:33.831330004Z Error: Cannot find module 'express'
+2025-11-23T18:20:33.831336235Z Require stack:
+2025-11-23T18:20:33.831342577Z - /home/site/wwwroot/server.js
+2025-11-23T18:20:33.831349119Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+2025-11-23T18:20:33.831355140Z     at Module._load (node:internal/modules/cjs/loader:1038:27)
+2025-11-23T18:20:33.831360350Z     at Module.require (node:internal/modules/cjs/loader:1289:19)
+2025-11-23T18:20:33.831365710Z     at require (node:internal/modules/helpers:182:18)
+2025-11-23T18:20:33.831370990Z     at Object.<anonymous> (/home/site/wwwroot/server.js:1:17)
+2025-11-23T18:20:33.831376560Z     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+2025-11-23T18:20:33.831381971Z     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+2025-11-23T18:20:33.831387491Z     at Module.load (node:internal/modules/cjs/loader:1266:32)
+2025-11-23T18:20:33.831393182Z     at Module._load (node:internal/modules/cjs/loader:1091:12)
+2025-11-23T18:20:33.831399033Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-11-23T18:20:33.831404954Z   code: 'MODULE_NOT_FOUND',
+2025-11-23T18:20:33.831410735Z   requireStack: [ '/home/site/wwwroot/server.js' ]
+2025-11-23T18:20:33.831416074Z }
+2025-11-23T18:20:33.831421354Z 
+2025-11-23T18:20:33.831426975Z Node.js v20.19.5
+
+2025-11-23T18:22:01.185831273Z    _____                               
+2025-11-23T18:22:01.204862116Z   /  _  \ __________ _________   ____  
+2025-11-23T18:22:01.204868668Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-11-23T18:22:01.204873367Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-11-23T18:22:01.204877385Z \____|__  /_____ \____/ |__|    \___  >
+2025-11-23T18:22:01.204881492Z         \/      \/                  \/ 
+2025-11-23T18:22:01.204885690Z A P P   S E R V I C E   O N   L I N U X
+2025-11-23T18:22:01.204889848Z 
+2025-11-23T18:22:01.204893806Z Documentation    : http://aka.ms/webapp-linux
+2025-11-23T18:22:01.204897883Z NodeJS quickstart: https://aka.ms/node-qs
+2025-11-23T18:22:01.204901790Z NodeJS Version   : v20.19.5
+2025-11-23T18:22:01.204905688Z Instance Name    : 10-30-0-104
+2025-11-23T18:22:01.204910036Z Instance Id      : 870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724
+2025-11-23T18:22:01.204914364Z 
+2025-11-23T18:22:01.204918432Z Note: Any data outside '/home' is not persisted
+2025-11-23T18:22:06.516274738Z Starting OpenBSD Secure Shell server: sshd.
+2025-11-23T18:22:06.547684354Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-11-23T18:22:06.664962188Z Updating certificates in /etc/ssl/certs...
+2025-11-23T18:23:45.213596294Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2025-11-23T18:23:45.247616669Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2025-11-23T18:23:45.877016137Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-11-23T18:23:46.040610978Z 4 added, 0 removed; done.
+2025-11-23T18:23:46.041109330Z Running hooks in /etc/ca-certificates/update.d...
+2025-11-23T18:23:46.074074921Z done.
+2025-11-23T18:23:46.269723164Z CA certificates copied and updated successfully.
+2025-11-23T18:23:47.090038895Z Starting periodic command scheduler: cron.
+2025-11-23T18:23:48.121961210Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-11-23T18:23:48.122010352Z Could not find operation ID in manifest. Generating an operation id...
+2025-11-23T18:23:48.122018246Z Build Operation ID: 56c0d18a-61cf-418b-8e3e-2ea629649f7a
+2025-11-23T18:23:49.965500649Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-11-23T18:23:50.020711349Z Writing output script to '/opt/startup/startup.sh'
+2025-11-23T18:23:51.603260606Z Running #!/bin/sh
+2025-11-23T18:23:51.603286254Z 
+2025-11-23T18:23:51.603293488Z # Enter the source directory to make sure the script runs where the user expects
+2025-11-23T18:23:51.603299800Z cd "/home/site/wwwroot"
+2025-11-23T18:23:51.603305951Z 
+2025-11-23T18:23:51.603326289Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-11-23T18:23:51.603331138Z if [ -z "$PORT" ]; then
+2025-11-23T18:23:51.603335406Z 		export PORT=8080
+2025-11-23T18:23:51.603340025Z fi
+2025-11-23T18:23:51.603343892Z 
+2025-11-23T18:23:51.603347679Z npm start
+2025-11-23T18:23:57.748989123Z npm info using npm@10.9.2
+2025-11-23T18:23:57.749023937Z npm info using node@v20.19.5
+2025-11-23T18:24:01.624972707Z 
+2025-11-23T18:24:01.624999697Z > chai-social-cash-app@1.0.0 start
+2025-11-23T18:24:01.625007251Z > node server.js
+2025-11-23T18:24:01.625012892Z 
+2025-11-23T18:24:01.714512852Z node:internal/modules/cjs/loader:1210
+2025-11-23T18:24:01.714537157Z   throw err;
+2025-11-23T18:24:01.714562545Z   ^
+2025-11-23T18:24:01.714569287Z 
+2025-11-23T18:24:01.714575689Z Error: Cannot find module 'express'
+2025-11-23T18:24:01.714619662Z Require stack:
+2025-11-23T18:24:01.714629119Z - /home/site/wwwroot/server.js
+2025-11-23T18:24:01.714635191Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+2025-11-23T18:24:01.714640621Z     at Module._load (node:internal/modules/cjs/loader:1038:27)
+2025-11-23T18:24:01.714646281Z     at Module.require (node:internal/modules/cjs/loader:1289:19)
+2025-11-23T18:24:01.714651771Z     at require (node:internal/modules/helpers:182:18)
+2025-11-23T18:24:01.714833952Z     at Object.<anonymous> (/home/site/wwwroot/server.js:1:17)
+2025-11-23T18:24:01.714844512Z     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+2025-11-23T18:24:01.714849060Z     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+2025-11-23T18:24:01.714853218Z     at Module.load (node:internal/modules/cjs/loader:1266:32)
+2025-11-23T18:24:01.714857175Z     at Module._load (node:internal/modules/cjs/loader:1091:12)
+2025-11-23T18:24:01.714861003Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-11-23T18:24:01.714864950Z   code: 'MODULE_NOT_FOUND',
+2025-11-23T18:24:01.714903602Z   requireStack: [ '/home/site/wwwroot/server.js' ]
+2025-11-23T18:24:01.714911627Z }
+2025-11-23T18:24:01.714917258Z 
+2025-11-23T18:24:01.714924060Z Node.js v20.19.5
+
+2025-11-23T18:24:15.215116261Z    _____                               
+2025-11-23T18:24:15.215222203Z   /  _  \ __________ _________   ____  
+2025-11-23T18:24:15.215229256Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-11-23T18:24:15.215234036Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-11-23T18:24:15.215238725Z \____|__  /_____ \____/ |__|    \___  >
+2025-11-23T18:24:15.215243303Z         \/      \/                  \/ 
+2025-11-23T18:24:15.215247321Z A P P   S E R V I C E   O N   L I N U X
+2025-11-23T18:24:15.215251299Z 
+2025-11-23T18:24:15.215255377Z Documentation    : http://aka.ms/webapp-linux
+2025-11-23T18:24:15.215259565Z NodeJS quickstart: https://aka.ms/node-qs
+2025-11-23T18:24:15.215263722Z NodeJS Version   : v20.19.5
+2025-11-23T18:24:15.215267981Z Instance Name    : 10-30-0-104
+2025-11-23T18:24:15.215272138Z Instance Id      : 870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724
+2025-11-23T18:24:15.215276527Z 
+2025-11-23T18:24:15.215280374Z Note: Any data outside '/home' is not persisted
+2025-11-23T18:24:17.022535760Z Starting OpenBSD Secure Shell server: sshd.
+2025-11-23T18:24:17.044913375Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-11-23T18:24:17.128929709Z Updating certificates in /etc/ssl/certs...
+2025-11-23T18:24:29.417535771Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2025-11-23T18:24:29.417572911Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2025-11-23T18:24:29.543045122Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-11-23T18:24:29.558198292Z 4 added, 0 removed; done.
+2025-11-23T18:24:29.558959295Z Running hooks in /etc/ca-certificates/update.d...
+2025-11-23T18:24:29.563399011Z done.
+2025-11-23T18:24:29.575655721Z CA certificates copied and updated successfully.
+2025-11-23T18:24:29.894821438Z Starting periodic command scheduler: cron.
+2025-11-23T18:24:30.471712956Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-11-23T18:24:30.471745658Z Could not find operation ID in manifest. Generating an operation id...
+2025-11-23T18:24:30.471753142Z Build Operation ID: 90516fc6-61c3-4287-b8a2-ac3a9a3259f6
+2025-11-23T18:24:30.719197723Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-11-23T18:24:30.747328488Z Writing output script to '/opt/startup/startup.sh'
+2025-11-23T18:24:30.781960493Z Running #!/bin/sh
+2025-11-23T18:24:30.781981833Z 
+2025-11-23T18:24:30.781988556Z # Enter the source directory to make sure the script runs where the user expects
+2025-11-23T18:24:30.781994146Z cd "/home/site/wwwroot"
+2025-11-23T18:24:30.781999747Z 
+2025-11-23T18:24:30.782015266Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-11-23T18:24:30.782019804Z if [ -z "$PORT" ]; then
+2025-11-23T18:24:30.782023942Z 		export PORT=8080
+2025-11-23T18:24:30.782028420Z fi
+2025-11-23T18:24:30.782032678Z 
+2025-11-23T18:24:30.782536822Z npm start
+2025-11-23T18:24:31.718733468Z npm info using npm@10.9.2
+2025-11-23T18:24:31.727522488Z npm info using node@v20.19.5
+2025-11-23T18:24:36.662333577Z 
+2025-11-23T18:24:36.662360908Z > chai-social-cash-app@1.0.0 start
+2025-11-23T18:24:36.662369484Z > node server.js
+2025-11-23T18:24:36.662811395Z 
+2025-11-23T18:24:36.774498306Z node:internal/modules/cjs/loader:1210
+2025-11-23T18:24:36.774522822Z   throw err;
+2025-11-23T18:24:36.774530927Z   ^
+2025-11-23T18:24:36.774537339Z 
+2025-11-23T18:24:36.774543912Z Error: Cannot find module 'express'
+2025-11-23T18:24:36.774548170Z Require stack:
+2025-11-23T18:24:36.774552147Z - /home/site/wwwroot/server.js
+2025-11-23T18:24:36.774556155Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+2025-11-23T18:24:36.774560152Z     at Module._load (node:internal/modules/cjs/loader:1038:27)
+2025-11-23T18:24:36.774563990Z     at Module.require (node:internal/modules/cjs/loader:1289:19)
+2025-11-23T18:24:36.774567786Z     at require (node:internal/modules/helpers:182:18)
+2025-11-23T18:24:36.774571544Z     at Object.<anonymous> (/home/site/wwwroot/server.js:1:17)
+2025-11-23T18:24:36.774575852Z     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+2025-11-23T18:24:36.774579819Z     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+2025-11-23T18:24:36.774583707Z     at Module.load (node:internal/modules/cjs/loader:1266:32)
+2025-11-23T18:24:36.774587634Z     at Module._load (node:internal/modules/cjs/loader:1091:12)
+2025-11-23T18:24:36.774591461Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-11-23T18:24:36.774595328Z   code: 'MODULE_NOT_FOUND',
+2025-11-23T18:24:36.774599075Z   requireStack: [ '/home/site/wwwroot/server.js' ]
+2025-11-23T18:24:36.774602872Z }
+2025-11-23T18:24:36.774606590Z 
+2025-11-23T18:24:36.774610326Z Node.js v20.19.5
+
+2025-11-23T18:29:19.418077257Z    _____                               
+2025-11-23T18:29:19.418126179Z   /  _  \ __________ _________   ____  
+2025-11-23T18:29:19.418132120Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-11-23T18:29:19.418136819Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-11-23T18:29:19.418141267Z \____|__  /_____ \____/ |__|    \___  >
+2025-11-23T18:29:19.418145836Z         \/      \/                  \/ 
+2025-11-23T18:29:19.418150194Z A P P   S E R V I C E   O N   L I N U X
+2025-11-23T18:29:19.418154612Z 
+2025-11-23T18:29:19.418159050Z Documentation    : http://aka.ms/webapp-linux
+2025-11-23T18:29:19.418163779Z NodeJS quickstart: https://aka.ms/node-qs
+2025-11-23T18:29:19.418168628Z NodeJS Version   : v20.19.5
+2025-11-23T18:29:19.418173227Z Instance Name    : 10-30-0-104
+2025-11-23T18:29:19.418177896Z Instance Id      : 870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724
+2025-11-23T18:29:19.418182234Z 
+2025-11-23T18:29:19.418186582Z Note: Any data outside '/home' is not persisted
+2025-11-23T18:29:20.609569608Z Starting OpenBSD Secure Shell server: sshd.
+2025-11-23T18:29:20.628630274Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-11-23T18:29:20.670887454Z Updating certificates in /etc/ssl/certs...
+2025-11-23T18:29:33.284498995Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2025-11-23T18:29:33.285181903Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2025-11-23T18:29:33.344535795Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-11-23T18:29:33.361794326Z 4 added, 0 removed; done.
+2025-11-23T18:29:33.361818101Z Running hooks in /etc/ca-certificates/update.d...
+2025-11-23T18:29:33.365619259Z done.
+2025-11-23T18:29:33.374179332Z CA certificates copied and updated successfully.
+2025-11-23T18:29:33.487330891Z Starting periodic command scheduler: cron.
+2025-11-23T18:29:33.610943293Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-11-23T18:29:33.611310487Z Could not find operation ID in manifest. Generating an operation id...
+2025-11-23T18:29:33.611323341Z Build Operation ID: 816b4a0f-c0ec-4b88-9edb-2babbe2ba05c
+2025-11-23T18:29:33.877675302Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-11-23T18:29:33.903306342Z Writing output script to '/opt/startup/startup.sh'
+2025-11-23T18:29:33.945945885Z Running #!/bin/sh
+2025-11-23T18:29:33.945975892Z 
+2025-11-23T18:29:33.945982846Z # Enter the source directory to make sure the script runs where the user expects
+2025-11-23T18:29:33.945989127Z cd "/home/site/wwwroot"
+2025-11-23T18:29:33.945994989Z 
+2025-11-23T18:29:33.946017070Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-11-23T18:29:33.946022030Z if [ -z "$PORT" ]; then
+2025-11-23T18:29:33.946026789Z 		export PORT=8080
+2025-11-23T18:29:33.946031798Z fi
+2025-11-23T18:29:33.946036447Z 
+2025-11-23T18:29:33.946040845Z npm start
+2025-11-23T18:29:34.879658135Z npm info using npm@10.9.2
+2025-11-23T18:29:34.879696938Z npm info using node@v20.19.5
+2025-11-23T18:29:36.479398441Z 
+2025-11-23T18:29:36.479493541Z > chai-social-cash-app@1.0.0 start
+2025-11-23T18:29:36.479505915Z > node server.js
+2025-11-23T18:29:36.479513249Z 
+2025-11-23T18:29:36.559704528Z node:internal/modules/cjs/loader:1210
+2025-11-23T18:29:36.559747069Z   throw err;
+2025-11-23T18:29:36.559754292Z   ^
+2025-11-23T18:29:36.559759893Z 
+2025-11-23T18:29:36.559765684Z Error: Cannot find module 'express'
+2025-11-23T18:29:36.559771154Z Require stack:
+2025-11-23T18:29:36.559776424Z - /home/site/wwwroot/server.js
+2025-11-23T18:29:36.559782065Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+2025-11-23T18:29:36.559787656Z     at Module._load (node:internal/modules/cjs/loader:1038:27)
+2025-11-23T18:29:36.559793216Z     at Module.require (node:internal/modules/cjs/loader:1289:19)
+2025-11-23T18:29:36.559798706Z     at require (node:internal/modules/helpers:182:18)
+2025-11-23T18:29:36.559803987Z     at Object.<anonymous> (/home/site/wwwroot/server.js:1:17)
+2025-11-23T18:29:36.559809888Z     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+2025-11-23T18:29:36.559815458Z     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+2025-11-23T18:29:36.559821139Z     at Module.load (node:internal/modules/cjs/loader:1266:32)
+2025-11-23T18:29:36.559827151Z     at Module._load (node:internal/modules/cjs/loader:1091:12)
+2025-11-23T18:29:36.559832831Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-11-23T18:29:36.559838733Z   code: 'MODULE_NOT_FOUND',
+2025-11-23T18:29:36.559844604Z   requireStack: [ '/home/site/wwwroot/server.js' ]
+2025-11-23T18:29:36.559849984Z }
+2025-11-23T18:29:36.559855314Z 
+2025-11-23T18:29:36.559860875Z Node.js v20.19.5
+
+2025-11-23T18:33:29.335034526Z    _____                               
+2025-11-23T18:33:29.335082386Z   /  _  \ __________ _________   ____  
+2025-11-23T18:33:29.335088076Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-11-23T18:33:29.335092465Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-11-23T18:33:29.335096472Z \____|__  /_____ \____/ |__|    \___  >
+2025-11-23T18:33:29.335100870Z         \/      \/                  \/ 
+2025-11-23T18:33:29.335105679Z A P P   S E R V I C E   O N   L I N U X
+2025-11-23T18:33:29.335110438Z 
+2025-11-23T18:33:29.335115247Z Documentation    : http://aka.ms/webapp-linux
+2025-11-23T18:33:29.335119525Z NodeJS quickstart: https://aka.ms/node-qs
+2025-11-23T18:33:29.335124534Z NodeJS Version   : v20.19.5
+2025-11-23T18:33:29.335129103Z Instance Name    : 10-30-0-104
+2025-11-23T18:33:29.335133291Z Instance Id      : 870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724
+2025-11-23T18:33:29.335137368Z 
+2025-11-23T18:33:29.335141225Z Note: Any data outside '/home' is not persisted
+2025-11-23T18:33:31.406328113Z Starting OpenBSD Secure Shell server: sshd.
+2025-11-23T18:33:31.412485803Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-11-23T18:33:31.437819450Z Updating certificates in /etc/ssl/certs...
+2025-11-23T18:33:37.978360106Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2025-11-23T18:33:37.978768597Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2025-11-23T18:33:38.111587597Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-11-23T18:33:38.144459825Z 4 added, 0 removed; done.
+2025-11-23T18:33:38.144736166Z Running hooks in /etc/ca-certificates/update.d...
+2025-11-23T18:33:38.149067624Z done.
+2025-11-23T18:33:38.161651942Z CA certificates copied and updated successfully.
+2025-11-23T18:33:38.248516532Z Starting periodic command scheduler: cron.
+2025-11-23T18:33:38.532108625Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-11-23T18:33:38.532230847Z Could not find operation ID in manifest. Generating an operation id...
+2025-11-23T18:33:38.532240013Z Build Operation ID: 1397565b-0897-4b66-a833-5e20f65947c6
+2025-11-23T18:33:38.767718502Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-11-23T18:33:38.790099136Z Writing output script to '/opt/startup/startup.sh'
+2025-11-23T18:33:38.867657016Z Running #!/bin/sh
+2025-11-23T18:33:38.867766084Z 
+2025-11-23T18:33:38.867775671Z # Enter the source directory to make sure the script runs where the user expects
+2025-11-23T18:33:38.867821304Z cd "/home/site/wwwroot"
+2025-11-23T18:33:38.867828688Z 
+2025-11-23T18:33:38.867845288Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-11-23T18:33:38.867850517Z if [ -z "$PORT" ]; then
+2025-11-23T18:33:38.867855977Z 		export PORT=8080
+2025-11-23T18:33:38.867860776Z fi
+2025-11-23T18:33:38.867865534Z 
+2025-11-23T18:33:38.867870483Z npm start
+2025-11-23T18:33:39.298435486Z npm info using npm@10.9.2
+2025-11-23T18:33:39.299315139Z npm info using node@v20.19.5
+2025-11-23T18:33:40.618776108Z 
+2025-11-23T18:33:40.618898859Z > chai-social-cash-app@1.0.0 start
+2025-11-23T18:33:40.618905582Z > node server.js
+2025-11-23T18:33:40.618910521Z 
+2025-11-23T18:33:40.799183805Z node:internal/modules/cjs/loader:1210
+2025-11-23T18:33:40.799216877Z   throw err;
+2025-11-23T18:33:40.799223439Z   ^
+2025-11-23T18:33:40.799227968Z 
+2025-11-23T18:33:40.799232677Z Error: Cannot find module 'express'
+2025-11-23T18:33:40.799237526Z Require stack:
+2025-11-23T18:33:40.799242205Z - /home/site/wwwroot/server.js
+2025-11-23T18:33:40.799246342Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+2025-11-23T18:33:40.799250931Z     at Module._load (node:internal/modules/cjs/loader:1038:27)
+2025-11-23T18:33:40.799254939Z     at Module.require (node:internal/modules/cjs/loader:1289:19)
+2025-11-23T18:33:40.799258986Z     at require (node:internal/modules/helpers:182:18)
+2025-11-23T18:33:40.799262763Z     at Object.<anonymous> (/home/site/wwwroot/server.js:1:17)
+2025-11-23T18:33:40.799268203Z     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+2025-11-23T18:33:40.799272932Z     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+2025-11-23T18:33:40.799276830Z     at Module.load (node:internal/modules/cjs/loader:1266:32)
+2025-11-23T18:33:40.799281188Z     at Module._load (node:internal/modules/cjs/loader:1091:12)
+2025-11-23T18:33:40.799285366Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-11-23T18:33:40.799289534Z   code: 'MODULE_NOT_FOUND',
+2025-11-23T18:33:40.799293471Z   requireStack: [ '/home/site/wwwroot/server.js' ]
+2025-11-23T18:33:40.799297458Z }
+2025-11-23T18:33:40.800640202Z 
+2025-11-23T18:33:40.800650582Z Node.js v20.19.5
+

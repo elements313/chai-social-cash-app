@@ -4,12 +4,8 @@
   "description": "Progressive Web App for tracking cash transactions and balances",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "npm install"
+    "start": "node server.js"
   },
-  "keywords": ["pwa", "cash-tracker", "react", "express"],
-  "author": "elements313",
-  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
     "cors": "^2.8.5",
@@ -18,7 +14,6 @@
     "uuid": "^9.0.0"
   },
   "engines": {
-    "node": "20.x",
-    "npm": ">=8.0.0"
+    "node": "20.x"
   }
 }

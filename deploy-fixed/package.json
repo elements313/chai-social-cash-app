@@ -5,11 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "postinstall": "npm install"
+    "postinstall": "echo 'Dependencies installed successfully'"
   },
-  "keywords": ["pwa", "cash-tracker", "react", "express"],
-  "author": "elements313",
-  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
     "cors": "^2.8.5",
@@ -18,7 +15,6 @@
     "uuid": "^9.0.0"
   },
   "engines": {
-    "node": "25.x",
-    "npm": ">=11.0.0"
+    "node": "20.x"
   }
 }
